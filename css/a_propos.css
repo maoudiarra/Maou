@@ -1,0 +1,21 @@
+ table {
+            padding-top: 80px;
+            width: 100%;
+            border-collapse: collapse;
+        }
+
+        td {
+            padding: 100%;
+            width: 80px;
+            text-align: left;
+            border-bottom: 1px solid #ddd; /* Bordure entre les lignes */
+        }
+
+        .colonne-droite {
+            background-color: #333; /* Fond sombre pour la colonne de droite */
+            color: #fff; /* Couleur du texte dans la colonne de droite */
+        }
+        .colonne-gauche {
+            background-color: #907373; /* Fond sombre pour la colonne de droite */
+            color: #fff; /* Couleur du texte dans la colonne de droite */
+        }

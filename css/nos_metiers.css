@@ -1,0 +1,20 @@
+nav ul {
+    list-style: none;
+    padding: 0;
+    display: flex;
+    flex-wrap: nowrap;
+    justify-content: flex-start;
+    align-items: flex-start;
+    align-content: center;
+    overflow: hidden;
+    flex-direction: row-reverse;
+   
+}
+
+nav ul li {
+    display: inline;
+    margin-right: 20px;
+}
+body{
+    background-color: aqua;
+}

@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Ma première page web</title>
+    <link rel="stylesheet" type="text/css" href="./css/Styles.css">
+</head>
+<body>
+    
+    <div class="contener">
+        <img src="bg4.jpg" alt="">
+    </div>
+    <div>
+    <header>
+        <!-- <h1>Géo_Solution</h1> -->
+        <nav>
+
+            <img src="geomatique_expert.jpg"  class="logo" alt="">
+            <ul>
+                <li class="accueil"><a href="acceuil.html" target="contenu">Accueil</a></li>
+                <li class="a_propos"><a href="A_propos.html" target="contenu">À propos</a></li>
+                <li class="mes_services"><a href="nos_domaines_d'intervention.html" target="contenu">Nos Métier</a></li>
+                <li class="contact "><a href="Contact.html">Contact</a></li>
+                <li class="outils_utiliser"><a href="Outils_utilise.html">Outils Utilisés</a></li>
+            </ul>
+        </nav>
+        <div class="site-container">
+            <p>Bienvenue à</p>
+            <h1>Géo_Solution</h1>
+            <h3>VOTRE CABINET D'AIDE A LA PRISE DE DECISION...</h3>
+            <div class="row">
+                <a href="file:///C:/Users/M5408765/OneDrive%20-%20Saint-Gobain/Documents/Projet_html/Projet_html/Fiche_contact.html" id="lienRendezVous">prendre un rendez-vous</a>
+                <a href="#">Voir les sites <span>&#x27f6</span></a>
+            </div>
+        </div>
+        <div class="social-icone">
+            <a href="#"><img src="github-fill.png" alt=""></a>
+            <a href="#"><img src="instagram-fill.png" alt=""></a>
+            <a href="#"><img src="drive-fill.png" alt=""></a>
+            <a href="#"><img src="phone-fill.png" alt=""></a>
+        </div>
+    </header>
+    <main>
+        <iframe name="contenu" id="iframeContenu" src="acceuil.html" frameborder="0" width="100%" height="600px"></iframe>
+    </main>
+    </div>
+    <footer>
+        <p>&copy; 2023 Mon Site Web</p>
+    </footer>
+
+    <script>
+        document.getElementById('lienRendezVous').addEventListener('click', function(event) {
+            event.preventDefault();
+            document.getElementById('iframeContenu').src = 'Fiche_contact.html';
+        });
+    </script>
+</body>
+</html>

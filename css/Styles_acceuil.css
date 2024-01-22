@@ -1,0 +1,83 @@
+body, html {
+    margin: 0;
+    padding: 0;
+    height: 100%;
+}
+
+.container {
+    position: relative;
+    width: 100%;
+    height: 100%;
+}
+
+img {
+    width: 100%;
+    height: auto;
+    display: block;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: -1; /* Place l'image derrière les autres éléments */
+}
+p{
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 25px;
+   font-style: italic;
+}
+
+.FlexContainer {
+    position: absolute;
+    top: 50%; /* Place le conteneur au milieu de l'écran */
+    left: 50%;
+    transform: translate(-50%, -50%); /* Centre les div par rapport au conteneur */
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.FlexContainer div {
+    width: 100px;
+    height: 100px;
+    background-color: #ccc;
+    /* Styles supplémentaires pour vos div */
+    margin: 10px; /* Espacement entre les div */
+    border: solid;
+}
+
+body, html {
+    height: 100%;
+    margin: 0;
+    padding: 0;
+  }
+  
+  .container {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    align-items: center;
+    height: 100%;
+  }
+  
+  .FlexContainer {
+    overflow: hidden;
+    width: 100%;
+  }
+  
+/* Défilement continu sans interruption entre les mots */
+.col-lg-8 {
+
+    display: inline-block;
+  }
+  
+  @keyframes defilement {
+    0% {
+      transform: translateX(100%);
+    }
+    100% {
+      transform: translateX(calc(-100% - 100vw)); /* Ajustement pour tenir compte de la largeur du viewport */
+    }
+  }
+
+
+  
+  
